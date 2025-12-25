@@ -78,7 +78,7 @@ function App() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("https://huggingface.co/spaces/TYNYSHTYK/DIABETICRETINOPATHY?logs=container/predict", {
+      const response = await fetch("https://huggingface.co/spaces/TYNYSHTYK/DIABETICRETINOPATHY/predict", {
         method: "POST",
         body: formData,
       });
